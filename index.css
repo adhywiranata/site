@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Courier Prime', monospace;
+}
+
+.space-bg {
+  background: url('./assets//orion_sword.jpg');
+  background-size: cover;
+  width: 30vw;
+  height: 100vh;
+}
+
+.root-container {
+  background-color: #111;
+  padding: 30px;
+  color: white;
+  width: 70vw;
+}
+
+#typer-1 {
+  line-height: 2.5rem;
+}
+
+#typer-1:after {
+  content: '|';
+  zoom: 1.5;
+  -webkit-animation: blink 1s infinite; /* Safari 4.0 - 8.0 */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
